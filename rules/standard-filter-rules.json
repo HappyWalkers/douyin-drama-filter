@@ -1,0 +1,40 @@
+[
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f201",
+    "enable": true,
+    "name": "短剧：平台合集标记",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "seriesInfoName"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "^短剧\\s*[·:：]",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": []
+  },
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f202",
+    "enable": true,
+    "name": "短剧：文案、话题及合集",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "desc",
+        "textExtra",
+        "seriesInfoName",
+        "mixInfoName",
+        "mixInfoDesc"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "短剧|微短剧|红果短剧",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": []
+  }
+]

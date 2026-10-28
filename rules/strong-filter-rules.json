@@ -1,0 +1,118 @@
+[
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f201",
+    "enable": true,
+    "name": "短剧：平台合集标记",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "seriesInfoName"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "^短剧\\s*[·:：]",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": []
+  },
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f202",
+    "enable": true,
+    "name": "短剧：文案、话题及合集",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "desc",
+        "textExtra",
+        "seriesInfoName",
+        "mixInfoName",
+        "mixInfoDesc"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "短剧|微短剧|红果短剧",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": []
+  },
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f203",
+    "enable": true,
+    "name": "强力：平台剧情分类",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "videoTag"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "^(剧情演绎|剧情|情景剧|短剧|微短剧|漫剧|猫剧情|狗剧情)$",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": []
+  },
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f204",
+    "enable": true,
+    "name": "强力：虚构演绎声明",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "riskInfoContent"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "(剧情|虚构|情景)演绎|情节虚构|纯属虚构",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": []
+  },
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f205",
+    "enable": true,
+    "name": "强力：漫剧及情景剧线索",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "desc",
+        "textExtra",
+        "seriesInfoName",
+        "mixInfoName",
+        "mixInfoDesc"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "漫剧|动态漫|沙雕动画|沙雕动漫|情景剧|小剧场|情景演绎|剧情演绎|[Aa][Ii]剧|原创剧集|一人分饰多角|小说推文",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": []
+  },
+  {
+    "uuid": "362e1630-a1b2-4a39-91ed-ef61f3d0f206",
+    "enable": true,
+    "name": "强力：AI 动画及影视剪辑",
+    "data": {
+      "scope": [
+        "all"
+      ],
+      "ruleName": [
+        "videoTag"
+      ],
+      "isFunctionHandler": false,
+      "ruleValue": "^(动漫IP|电影剪辑|电视剧剪辑)$",
+      "remarks": "基于真实公开样本验证；非全站准确率保证。"
+    },
+    "dynamicData": [
+      {
+        "ruleName": "riskInfoContent",
+        "ruleValue": "内容由\\s*[Aa][Ii]\\s*生成",
+        "isFunctionHandler": false
+      }
+    ]
+  }
+]
