@@ -16,7 +16,7 @@
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/)。Chrome 按[官方说明](https://www.tampermonkey.net/faq.php?q=Q209)开启「允许用户脚本 / Allow User Scripts」。
 2. 从原作者页面安装 [抖音优化 — WhiteSevs](https://greasyfork.org/zh-CN/scripts/494643-抖音优化)。本项目不包含原脚本和它的依赖。
 3. [下载强力过滤规则](https://raw.githubusercontent.com/HappyWalkers/douyin-drama-filter/main/rules/strong-filter-rules.json)，将文件另存为 `strong-filter-rules.json`。在抖音页打开 Tampermonkey 菜单 → 抖音优化「设置」→ 视频 → 过滤器 → 规则导入 → 本地导入，选择这个文件。
-4. [安装精选补漏脚本](https://raw.githubusercontent.com/HappyWalkers/douyin-drama-filter/main/douyin-drama-first-screen.user.js)。若没有弹出安装页，可在 Tampermonkey 管理面板新建脚本，用该文件的完整内容替换模板并保存。
+4. [安装精选补漏脚本](https://greasyfork.org/zh-CN/scripts/602734)。若没有弹出安装页，可在 Tampermonkey 管理面板新建脚本，用该文件的完整内容替换模板并保存。
 5. 刷新抖音。推荐页主要由原脚本处理，精选页另有卡片补漏。
 
 不要把规则 JSON 导入 Tampermonkey 的「实用工具 → 备份恢复」；它是「抖音优化」过滤器的规则文件。
